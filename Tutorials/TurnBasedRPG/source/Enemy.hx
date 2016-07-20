@@ -39,7 +39,7 @@ class Enemy extends FlxSprite
 		playerPos = FlxPoint.get();
 		
 		_sndStep = FlxG.sound.load(AssetPaths.step__wav, .4);
-		_sndStep.proximity(x, y, FlxG.camera.target, FlxG.width *.6);
+		_sndStep.proximity(x, y, FlxG.camera.target, FlxG.width * .6);
 	}
 	
 	override public function update(elapsed:Float):Void 
